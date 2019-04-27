@@ -1,0 +1,7 @@
+Name: Smilies in Emoji;
+Version: 0.1;
+Support Core: 16.16.0;
+Description: Превратите смайлы на вашем сайте в Эмодзи. Дайте больше эмоций вашим пользователям;
+Author: Владимир Дружаев (Otshelnik-Fm);
+Author URI: https://otshelnik-fm.ru/;
+Add-on URI: https://codeseller.ru/products/smilies-in-emoji/;
