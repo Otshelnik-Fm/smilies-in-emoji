@@ -1,0 +1,58 @@
+body :not(.smiles) > img.emoji {
+    height: 24px !important;
+    vertical-align: middle !important;
+    width: 24px !important;
+}
+
+div.rcl-smiles {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.rcl-smiles div.rcl-smiles-list {
+    padding: 0 18px 24px 0;
+}
+.rcl-smiles .rcl-smiles-list .smiles {
+    box-shadow: 15px 15px 20px -15px #000,0 0 20px -12px #000;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    height: 278px;
+    justify-content: space-between;
+    max-width: calc(100% - 18px);
+    min-width: 260px;
+    overflow-x: auto;
+    padding: 6px 12px 6px 6px;
+    width: auto;
+}
+/*распорка чтоб внизу отступ был*/
+.rcl-smiles .rcl-smiles-list .smiles::after {
+    content: "";
+    height: 6px;
+    width: 100%;
+}
+.rcl-smiles-list img.emoji {
+    height: 26px !important;
+    margin: 6px !important;
+    width: 26px !important;
+}
+.rcl-smiles-list img.emoji:hover {
+    transform: scale(1.5);
+}
+/*END основные*/
+
+/*чат, лс, но не миничат*/
+:not(.rcl-mini-chat) > .rcl-chat .smiles {
+    width: 430px;
+}
+@media screen and (max-width:480px) {
+    :not(.rcl-mini-chat) > .rcl-chat .smiles {
+        width: 310px;
+    }
+}
+/*end*/
+/*primeforum*/
+#prime-topic-form-box .rcl-smiles > i.rcli {
+    font-size: 30px;
+    padding: 6px;
+}
