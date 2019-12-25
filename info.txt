@@ -1,5 +1,5 @@
 Name: Smilies in Emoji;
-Version: 1.1;
+Version: 1.2;
 Support Core: 16.16.0;
 Description: Превратите смайлы на вашем сайте в Эмодзи. Дайте больше эмоций вашим пользователям;
 Author: Владимир Дружаев (Otshelnik-Fm);

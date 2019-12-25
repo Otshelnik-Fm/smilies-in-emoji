@@ -222,3 +222,27 @@ function siem_comment_smiles() {
         echo $smiles = rcl_get_smiles( 'comment' );
     }
 }
+
+// небольшой релоад парсера
+add_action( 'wp_footer', 'siem_footer_script' );
+function siem_footer_script() {
+    if ( ! is_user_logged_in() )
+        return;
+
+    $out = "
+rcl_add_action('rcl_get_smiles_ajax','siem_reload');
+function siem_reload(){
+    var sm = document.getElementsByClassName('smiles')[0];
+    if(typeof sm !== 'undefined'){
+        twemoji.parse(sm);
+    }
+}
+";
+
+    echo "<script>" . siem_compress_js( $out ) . "</script>\r\n";
+}
+
+// минимизация скрипта
+function siem_compress_js( $js ) {
+    return preg_replace( '/ {2,}/', '', str_replace( array( "\r\n", "\r", "\n", "\t" ), '', $js ) );
+}

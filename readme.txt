@@ -68,6 +68,11 @@ https://codeseller.ru/post-group/wp-recall-13-0-veter-peremen-ili-sovsem-ne-stra
 
 
 == Changelog ==
+= 2019-12-25 =
+v1.2
+* релоад скрипта twemoji - возможно поможет в некоторых случаях с отображением списка эмодзи
+
+
 = 2019-05-14 =
 v1.1
 * Добавлены эмодзи:
